@@ -11,8 +11,9 @@ A tool to convert the doc page of azure REST API to a JSON schema.
 ## Usage
 
 In order to use the tool run:  
-`python create_schema.py <schema-url> <property-name>`
+`python create_schema.py <schema-url> <property-name>`  
+  
 Optional properties:  
-`--export-folder=` - Export path. Use `--export-folder=generic` in order to export to the generic entity folder.
-`--enrichment-url=` - Enrichment url
-`--enrichment-title=` - Enrichment title  
+`--export-folder=` Export path. Use `--export-folder=generic` in order to export to the generic entity folder.
+`--enrichment-url=` Enrichment url  
+`--enrichment-title=` Enrichment title  
