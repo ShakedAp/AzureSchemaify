@@ -14,6 +14,19 @@ In order to use the tool run:
 `python create_schema.py <schema-url> <property-name>`  
   
 Optional properties:  
-`--export-folder=` Export path. Use `--export-folder=generic` in order to export to the generic entity folder  
+`--export-folder=` Export path. Use `--export-folder=generic` in order to export to the generic entity folder. Leave empty to export to the current folder  
 `--enrichment-url=` Enrichment url  
 `--enrichment-title=` Enrichment title  
+_Enrichment support is a bit naive right now, so make sure to update it to be correct afterwards_  
+
+### Examples
+
+Create a single schema:  
+```
+python create_schema.py "https://learn.microsoft.com/en-us/rest/api/batchmanagement/batch-account/list?view=rest-batchmanagement-2023-11-01&tabs=HTTP" BatchAccount
+```
+Create a schema + enrichment:  
+```
+python create_schema.py "https://learn.microsoft.com/en-us/rest/api/batchmanagement/batch-account/list?view=rest-batchmanagement-2023-11-01&tabs=HTTP" BatchAccount
+       --enrichment-url="https://learn.microsoft.com/en-us/rest/api/batchmanagement/pool/list-by-batch-account?view=rest-batchmanagement-2023-11-01&tabs=HTTP" --enrichment-title=Pool
+```
