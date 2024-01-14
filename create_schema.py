@@ -43,8 +43,4 @@ if __name__ == '__main__':
           '\nThus, MAKE SURE TO GO OVER the result schema and VERIFY it. Also take a look cli output of this command, as it can sometimes can give helpful feedback.',
           '\nHappy coding! ;0\n')
 
-    try:
-        SchemaObject.load_from_url(url, title_id, enrichment_url, enrichment_title, export_folder=export_folder)
-    except:
-        print('\n\n')
-        logging.critical("Something failed.. idk anymore i wrote this code in 3am :(")
+    SchemaObject.load_from_url(url, title_id, enrichment_url, enrichment_title, export_folder=export_folder)
