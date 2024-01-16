@@ -1,5 +1,6 @@
 # AzureSchemaify
 A tool to convert the doc page of azure REST API to a JSON schema.  
+**After using the tool, make sure to go over the output schema and the logs, in order to make sure everything looks good.**  
 
 ## Installation
 
