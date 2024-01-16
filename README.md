@@ -12,7 +12,7 @@ A tool to convert the doc page of azure REST API to a JSON schema.
 
 In order to use the tool run:  
 `python create_schema.py <schema-url> <property-name>`  
-schema-url - the Azure Docs page that contains the REST API response
+schema-url - the Azure Docs page that contains the REST API response  
 propety-name - the *property* to begin creating the schema from. This isn't the entity name
 
 Optional properties:  
